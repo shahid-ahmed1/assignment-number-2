@@ -24,7 +24,13 @@
     
 
   }
- 
+  .btn-primary {
+    border-radius: 42px;
+    padding: 16px 40px;
+    border: none;
+    background: rgb(230, 83, 60);color: rgb(255, 255, 255);
+    font-weight: 600;
+  }
   /* nav related style */
   nav{
     display: flex;
@@ -60,13 +66,73 @@
     background: rgb(230, 83, 60);
     border-radius: 30px;
   }
+  /* banner related style */
+  .banner{
+    display: flex;
+  }
+  .banner-contant{
+    padding: 60px;
+  }
+  .banner-title{
+    color: rgb(255, 255, 255);
+    font-size: 5rem;
+    font-weight: 900;
+    line-height: 120%;
+    
+  }
+  .banner-discription{
+    margin-top: 28px;
+    color: rgba(255, 255, 255, 0.5);
+    font-weight: 400;
+    line-height: 24px;
+
+  }
+  .input-btn{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+  .Download{
+    margin-top: 28px;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 42px;
+    padding: 16px 40px;
+    font-weight: 600;
+    background: none;
+    color: rgb(255, 255, 255);
+    
+
+
+  }
+  .input-btn input{
+    margin-top: 20px;
+
+  }
+  
+
   /* responsive style */
 @media screen and (max-width:576px){
     nav ul li a{
         display: none;
     }
+    .nav-title{
+      margin-left: 20px;
+    }
     .menu{
         display: block;
         font-size: 2rem;
     }
+    .banner{
+      flex-direction: column;
+    }
+    .banner-contant{
+      padding: 20px;
+    }
+    .banner-title{
+      width: 80%;
+      font-size: 3rem;
+      
+    }
+   
+
 }
