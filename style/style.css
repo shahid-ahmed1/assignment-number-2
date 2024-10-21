@@ -67,13 +67,15 @@
     border-radius: 30px;
   }
   /* banner related style */
-  .banner{
+  .banner{  
     display: flex;
+    gap: 80px;
+    margin-top: 50px;
   }
-  .banner-contant{
-    padding: 60px;
-  }
+  
   .banner-title{
+    width: 520px;
+    margin-top: 50px;
     color: rgb(255, 255, 255);
     font-size: 5rem;
     font-weight: 900;
@@ -81,6 +83,7 @@
     
   }
   .banner-discription{
+    width: 520px;
     margin-top: 28px;
     color: rgba(255, 255, 255, 0.5);
     font-weight: 400;
@@ -108,7 +111,57 @@
     margin-top: 20px;
 
   }
-  
+  /* habits section style */
+  .habits-title{
+    color: rgb(255, 255, 255);
+    font-size: 3rem;
+    font-weight: 900;
+    line-height: 120%;
+    text-align: center;
+  }
+  .habits-discription{
+    margin-top: 20px;
+    color: rgba(255, 255, 255, 0.5);
+    font-weight: 400;
+    line-height: 24px;
+    text-align: center;
+  }
+  .habits-container{
+    margin-top: 60px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    align-items: center;
+    justify-content: center;
+  }
+
+  .habits-img-contant img{
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+
+  }
+  .habits-img-contant h5{
+    margin:20px auto;
+    color: rgb(255, 255, 255);
+    font-size: 1.25rem;
+    font-weight: 600;
+    line-height: 120%;
+    margin-left: 40px;
+    
+    
+  }
+ .time{
+  padding-left: 35px;
+ }
+  .habits-img-contant p{
+    margin-top: 20px;
+    color: rgba(255, 255, 255, 0.5);
+    font-weight: 400;
+    font-size: 0.8rem;
+    line-height: 18px;
+    letter-spacing: 0.3px;
+    
+  }
 
   /* responsive style */
 @media screen and (max-width:576px){
@@ -132,6 +185,17 @@
       width: 80%;
       font-size: 3rem;
       
+    }
+    .banner-discription{
+      width: 80%;
+    }
+    .habits-container{
+      grid-template-columns: 1fr;
+       gap: 30px;
+      justify-items: center;
+    }
+    .habits-title{
+      font-size: 2rem;
     }
    
 
