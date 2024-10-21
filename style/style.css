@@ -1,0 +1,72 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+.font-family{
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+  }
+  *{
+    margin: 0;
+    padding: 0;
+    
+  }
+  body{
+    background: rgb(0, 0, 0);
+  }
+  header{
+    background: linear-gradient(180.00deg, rgb(17, 17, 17),rgba(119, 119, 119, 0) 100%);
+  }
+  /* sheard style */
+  .container{
+    max-width: 1060px;
+    margin: 50px auto;
+    
+
+  }
+ 
+  /* nav related style */
+  nav{
+    display: flex;
+    justify-content: space-between;
+  }
+  .nav-title{
+    color: rgb(230, 83, 60);
+    font-size: 2rem;
+    font-weight: 800;
+  }
+  nav ul{
+    display: flex;
+    align-items: center;
+  }
+  nav ul li{
+    margin-right: 45px;
+    list-style: none;
+  }
+  nav ul li a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 1.rem;
+    font-weight: 600;
+    line-height: 22px;
+
+  }
+.menu{
+    display: none;
+}
+  .home{
+    color: rgb(255, 255, 255);
+    padding: 8px 20px;
+    background: rgb(230, 83, 60);
+    border-radius: 30px;
+  }
+  /* responsive style */
+@media screen and (max-width:576px){
+    nav ul li a{
+        display: none;
+    }
+    .menu{
+        display: block;
+        font-size: 2rem;
+    }
+}
