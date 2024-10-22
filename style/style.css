@@ -202,6 +202,65 @@
 .run-contant button{
   margin-top: 35px;
 }
+/* bmi style */
+.bmi-container{
+  display: flex;
+  gap: 170px;
+}
+.bmi-section{
+  max-width: 1640px;
+  background: rgb(34, 34, 34);
+}
+.bmi-chart,
+.bmi-calculate{
+  padding: 50px 0;
+}
+.bmi-chart-title{
+
+  color: rgb(255, 255, 255);
+  font-size: 1.85rem;
+  font-weight: 900;
+  line-height: 120%;
+}
+.bmi-chart table, th,tr,td{
+  margin-top: 70px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-collapse: collapse;
+  padding: 20px;
+
+}
+.bmi-chart td,tr{
+  border-collapse: collapse;
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 120%;
+  text-align: left;
+}
+.bmi-chart th{
+  color: rgb(255, 255, 255);
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 120%;
+  text-align: left;
+}
+.bmi-calculate-discription{
+  color: rgba(255, 255, 255, 0.5);
+  margin: 15px 0;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+}
+.bmi-calculate button{
+  padding: 12px 20px;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.1);
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+}
+
 /* our tems style */
 .tems-img-container{
   border-radius: 18px;
@@ -224,20 +283,81 @@
 .tems-img img{
   width: 100%;
   height: 100%;
+  filter: brightness(70%);
   border-radius: 18px;
-  background: rgba(0, 0, 0, 0.2),url(image);
+  background: rgba(0, 0, 0, 0.2);
 }
 .tems-contant h5{
   color: rgb(255, 255, 255);
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: 700;
 }
 .tems-contant p{
   color: rgba(255, 255, 255, 0.5);
-  font-size: 1.5rem;
-  font-weight: 900;
+  font-size: 1rem;
+  font-weight: 300;
   opacity: 0.7;
 }
+/* footer style */
+footer{
+  max-width: 1640px;
+  background: rgba(255, 255, 255, 0.1);
+}
+.footer-container{
+  padding: 50px 0 0 0;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 100px;
+  align-items: center;
+}
+
+.footer-contant h4{
+  margin-bottom: 20px;
+  color: rgb(255, 255, 255);
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 120%;
+
+}
+.footer-contant a{
+  margin-top: 20px;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 1.25rem;
+  font-weight: 400;
+  line-height: 120%;
+
+}
+.footer-contant h1{
+  color: rgb(230, 83, 60);;
+  font-size: 4rem;
+  font-weight: 800;
+  line-height: 120%;
+
+}
+ .footer-contant p{
+  margin-top: 20px;
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 0.9rem;
+  font-weight: 400;
+  letter-spacing: 0.3px;
+ }
+ .footer .footer-p{
+  height: auto;
+  padding-top: 40px;
+  border-top: 2px solid white;
+  padding-bottom: 40px;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 1.25rem;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.3px;
+  
+ }
+ 
   /* responsive style */
 @media screen and (max-width:576px){
     nav ul li a{
@@ -279,8 +399,13 @@
     .run-title{
       font-size: 2.50rem;
     }
-    .tems-img-container{
+    .tems-img-container,
+    .footer-container{
       grid-template-columns: 1fr;
+    }
+    .footer-container{
+      padding: 30px;
+      gap: 20px;
     }
    
 
