@@ -156,7 +156,6 @@
 
   }
   .video p{
-    /* body-text */
     color: rgba(239, 237, 232, 0.65);
     font-size: 1rem;
     font-weight: 400;
@@ -184,14 +183,14 @@
 
   }
   /* habits section style */
-  .habits-title ,.teams-title{
+  .habits-title ,.teams-title ,.bmi-text-title {
     color: rgb(255, 255, 255);
     font-size: 3rem;
     font-weight: 900;
     line-height: 120%;
     text-align: center;
   }
-  .habits-discription ,.teams-discription{
+  .habits-discription ,.teams-discription,.bmi-text {
     margin-top: 20px;
     color: rgba(255, 255, 255, 0.5);
     font-weight: 400;
@@ -266,7 +265,16 @@
 .run-contant button{
   margin-top: 35px;
 }
-/* bmi style */
+/* bmi text container text */
+.bmi-text-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.bmi-text-title,.bmi-text{
+  text-align: left;
+}
+/* bmi  calculate and table style */
 .bmi-container{
   display: flex;
   gap: 170px;
@@ -480,7 +488,7 @@ footer{
     .run-contant button{
       width: 100%;
     }
-    .run-title{
+    .run-title ,.bmi-text-title{
       font-size: 2.50rem;
     }
     .tems-img-container,
@@ -506,6 +514,10 @@ footer{
       left:225px;
       top: 780px;
      }
+     .bmi-text-container{
+      padding: 30px;
+     }
+     
    
 
 }
