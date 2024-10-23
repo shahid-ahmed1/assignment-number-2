@@ -1,7 +1,10 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
 .font-family{
-    font-family: "Inter", sans-serif;
+    font-family: "Inter","Dancing Script", sans-serif;
     font-optical-sizing: auto;
     font-weight: weight;
     font-style: normal;
@@ -80,6 +83,7 @@
   }
   
   .banner-title{
+    
     width: 520px;
     margin-top: 50px;
     color: rgb(255, 255, 255);
@@ -89,7 +93,7 @@
     
   }
   .fitness{
-    font-weight: 100;
+    font-family: "Dancing Script";
     
   }
   .banner-discription{
@@ -565,6 +569,9 @@ footer{
      }
      .bmi-text-container ,.chose-contant{
       padding: 30px;
+     }
+     .chose-contant{
+      margin-top: 30px;
      }
      
      
